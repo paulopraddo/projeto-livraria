@@ -1,20 +1,19 @@
 package com.livraria.Livraria.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
 @Getter
 @Setter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class LivrosModel {
+@Table(name = "livros_model")
+public class LivroModel {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     private String titulo;
     private String autor;
