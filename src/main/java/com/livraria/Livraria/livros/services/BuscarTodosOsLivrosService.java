@@ -1,8 +1,8 @@
-package com.livraria.Livraria.services;
+package com.livraria.Livraria.livros.services;
 
-import com.livraria.Livraria.entity.LivroModel;
-import com.livraria.Livraria.repositories.LivrosRepository;
-import com.livraria.Livraria.useCase.BuscarTodosOsLivrosUseCase;
+import com.livraria.Livraria.livros.entity.LivroModel;
+import com.livraria.Livraria.livros.repositories.LivrosRepository;
+import com.livraria.Livraria.livros.useCase.BuscarTodosOsLivrosUseCase;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

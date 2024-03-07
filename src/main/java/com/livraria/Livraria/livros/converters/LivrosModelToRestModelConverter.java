@@ -1,7 +1,7 @@
-package com.livraria.Livraria.converters;
+package com.livraria.Livraria.livros.converters;
 
-import com.livraria.Livraria.entity.LivroModel;
-import com.livraria.Livraria.restModels.LivroRestModel;
+import com.livraria.Livraria.livros.entity.LivroModel;
+import com.livraria.Livraria.livros.restModels.LivroRestModel;
 import com.livraria.Livraria.utils.abstractClasses.ConvertCase;
 import org.springframework.stereotype.Component;
 
