@@ -1,6 +1,6 @@
-package com.livraria.Livraria.useCase;
+package com.livraria.Livraria.livros.useCase;
 
-import com.livraria.Livraria.entity.LivroModel;
+import com.livraria.Livraria.livros.entity.LivroModel;
 
 import java.util.List;
 

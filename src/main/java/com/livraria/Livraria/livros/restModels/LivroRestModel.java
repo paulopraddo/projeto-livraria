@@ -1,4 +1,4 @@
-package com.livraria.Livraria.restModels;
+package com.livraria.Livraria.livros.restModels;
 
 import lombok.Builder;
 import lombok.Data;

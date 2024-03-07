@@ -1,4 +1,4 @@
-package com.livraria.Livraria.entity;
+package com.livraria.Livraria.livros.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

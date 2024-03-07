@@ -1,6 +1,6 @@
-package com.livraria.Livraria.repositories;
+package com.livraria.Livraria.livros.repositories;
 
-import com.livraria.Livraria.entity.LoginUserDetailsModel;
+import com.livraria.Livraria.livros.entity.LoginUserDetailsModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
