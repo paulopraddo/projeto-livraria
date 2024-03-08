@@ -15,6 +15,11 @@ public class AdicionarLivroService implements AdicionarLivroUseCase {
     private final LivrosRepository repository;
     @Override
     public LivroModel execute(LivroModel model) {
+
+        if (model == null) {
+            throw new IllegalArgumentException("O livro não pode ser nulo");
+        }
+        
         return this.repository.save(model);
     }
 }

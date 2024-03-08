@@ -12,7 +12,7 @@ public interface LivrosResource {
 
     List<LivroModel> buscarTodosOsLivros();
 
-    ResponseEntity adicionarLivro(LivroRestModel restModel);
+    ResponseEntity<Object> adicionarLivro(LivroRestModel restModel);
 
-    ResponseEntity deletarLivro(DeletarLivroRestModel restModel);
+    ResponseEntity<Object> deletarLivro(DeletarLivroRestModel restModel);
 }
