@@ -32,7 +32,7 @@ public class LivrosController implements LivrosResource{
 
     @Override
     @PostMapping(value = "/adicionarLivro")
-    public ResponseEntity adicionarLivro(@RequestBody LivroRestModel restModel) {
+    public ResponseEntity<Object> adicionarLivro(@RequestBody LivroRestModel restModel) {
 
         LivroModel model = this.livrosModelToRestModelConverter.convertToEntity(restModel);
 
@@ -43,7 +43,7 @@ public class LivrosController implements LivrosResource{
 
     @Override
     @DeleteMapping(value = "/deletarLivro")
-    public ResponseEntity deletarLivro(@RequestBody DeletarLivroRestModel restModel) {
+    public ResponseEntity<Object> deletarLivro(@RequestBody DeletarLivroRestModel restModel) {
 
         this.deletarLivroUseCase.execute(restModel.titulo());
 

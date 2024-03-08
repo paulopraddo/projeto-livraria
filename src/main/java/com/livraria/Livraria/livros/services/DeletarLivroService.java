@@ -16,6 +16,11 @@ public class DeletarLivroService implements DeletarLivroUseCase {
     @Override
     public void execute(String titulo) {
         LivroModel model = this.repository.findByTitulo(titulo);
+
+        if(model == null) {
+            throw new IllegalArgumentException("Não foi encontrado nenhum livro com esse titulo");
+        }
+
         this.repository.delete(model);
     }
 }
