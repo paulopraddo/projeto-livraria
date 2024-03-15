@@ -1,4 +1,4 @@
-package com.livraria.Livraria.livros.useCase;
+package com.livraria.Livraria.livros.domain.useCases;
 
 public interface DeletarLivroUseCase {
 

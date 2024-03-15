@@ -1,4 +1,4 @@
-package com.livraria.Livraria.livros.entity;
+package com.livraria.Livraria.livros.domain.models;
 
 import jakarta.persistence.*;
 import lombok.*;
