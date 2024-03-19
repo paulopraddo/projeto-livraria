@@ -1,5 +1,3 @@
-package com.livraria.Livraria.livros.app.entrypoints;
-
 import com.livraria.Livraria.livros.app.restModels.AlterarLivroRestModel;
 import com.livraria.Livraria.livros.app.restModels.BuscarLivroRestModel;
 import com.livraria.Livraria.livros.app.restModels.DeletarLivroRestModel;
