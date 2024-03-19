@@ -2,12 +2,8 @@ package com.livraria.Livraria.livros.app.restModels;
 
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 @Data
-@Getter
-@Setter
 @Builder
 public class LivroRestModel {
 

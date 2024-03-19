@@ -7,4 +7,5 @@ import com.livraria.Livraria.livros.domain.models.LoginUserDetailsModel;
 
 @Repository
 public interface AuthRepository extends JpaRepository<LoginUserDetailsModel, String> {
+    
 }
