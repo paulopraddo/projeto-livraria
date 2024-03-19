@@ -13,4 +13,6 @@ public interface LivrosDataProvider {
     void deletarLivro(LivroModel model);
 
     LivroModel buscarLivro(String titulo);
+
+    void alterarLivro(LivroModel model);
 }

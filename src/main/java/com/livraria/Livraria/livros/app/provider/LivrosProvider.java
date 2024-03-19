@@ -55,4 +55,14 @@ public class LivrosProvider implements LivrosDataProvider {
         return this.repository.findByTitulo(titulo);
     }
 
+    @Override
+    public void alterarLivro(LivroModel model) {
+
+        if (model == null) {
+            throw new IllegalArgumentException("O livro que você está tentando deletar é nulo");
+        }
+
+        this.repository.save(model);
+    }
+
 }

@@ -1,11 +1,13 @@
 package com.livraria.Livraria.livros.app.entrypoints;
 
+import com.livraria.Livraria.livros.app.restModels.AlterarLivroRestModel;
 import com.livraria.Livraria.livros.app.restModels.BuscarLivroRestModel;
 import com.livraria.Livraria.livros.app.restModels.DeletarLivroRestModel;
 import com.livraria.Livraria.livros.app.restModels.LivroRestModel;
 import com.livraria.Livraria.livros.domain.converters.LivrosModelToRestModelConverter;
 import com.livraria.Livraria.livros.domain.models.LivroModel;
 import com.livraria.Livraria.livros.domain.useCases.AdicionarLivroUseCase;
+import com.livraria.Livraria.livros.domain.useCases.AlterarLivroUseCase;
 import com.livraria.Livraria.livros.domain.useCases.BuscarLivroUseCase;
 import com.livraria.Livraria.livros.domain.useCases.BuscarTodosOsLivrosUseCase;
 import com.livraria.Livraria.livros.domain.useCases.DeletarLivroUseCase;
@@ -25,6 +27,7 @@ public class LivrosController implements LivrosResource{
     private final BuscarLivroUseCase buscarLivroUseCase;
     private final AdicionarLivroUseCase adicionarLivroUseCase;
     private final DeletarLivroUseCase deletarLivroUseCase;
+    private final AlterarLivroUseCase alterarLivroUseCase;
     private final LivrosModelToRestModelConverter livrosModelToRestModelConverter;
 
     @Override
@@ -61,6 +64,16 @@ public class LivrosController implements LivrosResource{
         this.deletarLivroUseCase.execute(restModel.titulo());
 
         return ResponseEntity.ok().build();
+    }
+
+    @Override
+    @PutMapping(value = "/alterarLivro")
+    public ResponseEntity<Object> alterarLivro(@RequestBody AlterarLivroRestModel restModel) {
+        
+        this.alterarLivroUseCase.execute(restModel);
+
+        return ResponseEntity.ok().build();
+
     }
 
 
